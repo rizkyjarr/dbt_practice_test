@@ -4,7 +4,7 @@ hailing_project:
       type: bigquery
       method: service-account
       project: purwadika
-      dataset: rizky_dwh_hailing_source
+      dataset: rizky_dwh_hailing_staging
       threads: 4
       keyfile: /root/.dbt/credentials.json
   target: dev

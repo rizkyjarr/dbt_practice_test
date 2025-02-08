@@ -24,10 +24,12 @@ models:
   dbt_project: # samain kaya nama folder project nya nya
 
     staging: 
-      +schema: rizky_dwh_hailing_staging # schema mendefinisikan target dataset yang mau distore
+      +dataset: rizky_dwh_hailing_staging
       +materialized: incremental
+      
 
-    facts:
-      +schema: rizky_dwh_hailing_facts
-      +materialized: incremental
+    # facts:
+    #   # +schema: rizky_dwh_hailing_facts
+    #   +materialized: incremental
+      
 

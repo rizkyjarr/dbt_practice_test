@@ -9,7 +9,7 @@
 
     
 
-    merge into `purwadika`.`rizky_dwh_hailing_source`.`production_hailing_staging_customer` as DBT_INTERNAL_DEST
+    merge into `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_customer` as DBT_INTERNAL_DEST
         using (
 
 WITH source AS (
@@ -32,7 +32,7 @@ SELECT * FROM cleaned
 
     WHERE created_at > (
         SELECT MAX(created_at)
-        FROM `purwadika`.`rizky_dwh_hailing_source`.`production_hailing_staging_customer`
+        FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_customer`
     )
 
         ) as DBT_INTERNAL_SOURCE
