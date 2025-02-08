@@ -11,7 +11,7 @@
 
 WITH source AS (
     SELECT *
-    FROM {{ source('source', 'driver_data') }}
+    FROM {{ source('source_table', 'driver_data') }}
 ),
 
 cleaned AS (

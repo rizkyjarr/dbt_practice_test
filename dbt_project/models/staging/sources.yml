@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: source
+  - name: source_table
     schema : rizky_dwh_hailing_source
     tables:
       - name: customer_data
@@ -14,13 +14,13 @@ sources:
         identifier: production_hailing_source_vehicle
     
   - name: staging_tables
-    schema : rizky_dwh_hailing_facts
+    schema : rizky_dwh_hailing_staging
     tables:
-      - name: customer_staging
+      - name: customer_data
         identifier: production_hailing_staging_customer
-      - name: driver_staging
+      - name: driver_data
         identifier: production_hailing_staging_driver
-      - name: ride_staging
+      - name: ride_data
         identifier: production_hailing_staging_ride
-      - name: vehicle_staging
+      - name: vehicle_data
         identifier: production_hailing_staging_vehicle

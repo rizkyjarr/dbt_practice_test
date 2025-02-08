@@ -11,7 +11,7 @@
 
 WITH source AS (
     SELECT *
-    FROM {{ source('source', 'customer_data') }}
+    FROM {{ source('source_table', 'customer_data') }}
 ),
 
 cleaned AS (

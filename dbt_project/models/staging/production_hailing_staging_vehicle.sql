@@ -11,7 +11,7 @@
 
 WITH source AS (
     SELECT *
-    FROM {{ source('source', 'vehicle_data') }}
+    FROM {{ source('source_table', 'vehicle_data') }}
 )
 
 SELECT *

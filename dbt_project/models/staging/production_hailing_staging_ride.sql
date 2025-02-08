@@ -11,7 +11,7 @@
 
 WITH source AS (
     SELECT *
-    FROM {{ source('source', 'ride_data') }}
+    FROM {{ source('source_table', 'ride_data') }}
 )
 
 SELECT *
