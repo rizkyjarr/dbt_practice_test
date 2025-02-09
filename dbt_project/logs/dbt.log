@@ -23888,3 +23888,1196 @@ FROM source
 [0m02:48:00.881534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bdc01f950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bdfacd7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3bdf7fcb90>]}
 [0m02:48:00.882441 [debug] [MainThread]: Flushing usage events
 [0m02:48:02.386003 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:34:54.167562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb972f23bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb9732ce110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb972f23b50>]}
+
+
+============================== 03:34:54.170793 | 88ff593e-8a87-45e0-8114-ff6dcb7cf5c3 ==============================
+[0m03:34:54.170793 [info ] [MainThread]: Running with dbt=1.9.0
+[0m03:34:54.172355 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app/dbt_project', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/usr/app/dbt_project/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m03:34:54.719262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb949337fd0>]}
+[0m03:34:54.766928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb975159dd0>]}
+[0m03:34:54.768368 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m03:34:54.836268 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m03:34:55.018931 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m03:34:55.022421 [debug] [MainThread]: Partial parsing: added file: hailing_project://models/facts/dim_driver.sql
+[0m03:34:55.265941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb94923f0d0>]}
+[0m03:34:55.337865 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt_project/target/manifest.json
+[0m03:34:55.344810 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt_project/target/semantic_manifest.json
+[0m03:34:55.362706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb93355fc50>]}
+[0m03:34:55.363925 [info ] [MainThread]: Found 6 models, 8 sources, 489 macros
+[0m03:34:55.365042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb9490cde10>]}
+[0m03:34:55.367564 [info ] [MainThread]: 
+[0m03:34:55.368581 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m03:34:55.369816 [info ] [MainThread]: 
+[0m03:34:55.371349 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m03:34:55.375692 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_purwadika'
+[0m03:34:55.376344 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_purwadika'
+[0m03:34:55.377213 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:34:55.378134 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:34:56.332850 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_purwadika, now list_purwadika_rizky_dwh_hailing_staging)
+[0m03:34:56.333470 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_purwadika, now list_purwadika_rizky_dwh_hailing_facts)
+[0m03:34:56.334189 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:34:56.336701 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:34:56.626505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb948e5ef50>]}
+[0m03:34:56.628072 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:34:56.633268 [debug] [Thread-1 (]: Began running node model.hailing_project.dim_customer
+[0m03:34:56.633672 [debug] [Thread-2 (]: Began running node model.hailing_project.dim_driver
+[0m03:34:56.634310 [debug] [Thread-3 (]: Began running node model.hailing_project.production_hailing_staging_customer
+[0m03:34:56.634768 [debug] [Thread-4 (]: Began running node model.hailing_project.production_hailing_staging_driver
+[0m03:34:56.635314 [info ] [Thread-1 (]: 1 of 6 START sql incremental model rizky_dwh_hailing_facts.dim_customer ........ [RUN]
+[0m03:34:56.636567 [info ] [Thread-2 (]: 2 of 6 START sql incremental model rizky_dwh_hailing_facts.dim_driver .......... [RUN]
+[0m03:34:56.637638 [info ] [Thread-3 (]: 3 of 6 START sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_customer  [RUN]
+[0m03:34:56.638869 [info ] [Thread-4 (]: 4 of 6 START sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_driver  [RUN]
+[0m03:34:56.640314 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_purwadika_rizky_dwh_hailing_staging, now model.hailing_project.dim_customer)
+[0m03:34:56.641803 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_purwadika_rizky_dwh_hailing_facts, now model.hailing_project.dim_driver)
+[0m03:34:56.643024 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.hailing_project.production_hailing_staging_customer'
+[0m03:34:56.644088 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.hailing_project.production_hailing_staging_driver'
+[0m03:34:56.644872 [debug] [Thread-1 (]: Began compiling node model.hailing_project.dim_customer
+[0m03:34:56.645692 [debug] [Thread-2 (]: Began compiling node model.hailing_project.dim_driver
+[0m03:34:56.646469 [debug] [Thread-3 (]: Began compiling node model.hailing_project.production_hailing_staging_customer
+[0m03:34:56.647423 [debug] [Thread-4 (]: Began compiling node model.hailing_project.production_hailing_staging_driver
+[0m03:34:56.661401 [debug] [Thread-1 (]: Writing injected SQL for node "model.hailing_project.dim_customer"
+[0m03:34:56.666436 [debug] [Thread-2 (]: Writing injected SQL for node "model.hailing_project.dim_driver"
+[0m03:34:56.674903 [debug] [Thread-3 (]: Writing injected SQL for node "model.hailing_project.production_hailing_staging_customer"
+[0m03:34:56.681259 [debug] [Thread-4 (]: Writing injected SQL for node "model.hailing_project.production_hailing_staging_driver"
+[0m03:34:56.688962 [debug] [Thread-2 (]: Began executing node model.hailing_project.dim_driver
+[0m03:34:56.691827 [debug] [Thread-4 (]: Began executing node model.hailing_project.production_hailing_staging_driver
+[0m03:34:56.692440 [debug] [Thread-3 (]: Began executing node model.hailing_project.production_hailing_staging_customer
+[0m03:34:56.704447 [debug] [Thread-1 (]: Began executing node model.hailing_project.dim_customer
+[0m03:34:56.746573 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m03:34:56.764888 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:34:56.775958 [debug] [Thread-2 (]: Writing runtime sql for node "model.hailing_project.dim_driver"
+[0m03:34:56.778704 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:34:56.832243 [debug] [Thread-2 (]: On model.hailing_project.dim_driver: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.dim_driver"} */
+
+  
+    
+
+    create or replace table `purwadika`.`rizky_dwh_hailing_facts`.`dim_driver`
+      
+    partition by timestamp_trunc(created_at, day)
+    
+
+    OPTIONS()
+    as (
+      
+
+
+WITH source AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_customer`
+),
+
+cleaned AS (
+    SELECT
+        cust_id,
+        name,
+        -- Standardizing phone numbers (removing parentheses, dashes, spaces)
+        REGEXP_REPLACE(phone_number, r'[\s\-\(\)]', '') AS phone_number,
+        email,
+        created_at
+    FROM source
+)
+    );
+  
+[0m03:34:56.854832 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m03:34:57.122762 [debug] [Thread-4 (]: Writing runtime sql for node "model.hailing_project.production_hailing_staging_driver"
+[0m03:34:57.124196 [debug] [Thread-1 (]: Writing runtime sql for node "model.hailing_project.dim_customer"
+[0m03:34:57.125577 [debug] [Thread-3 (]: Writing runtime sql for node "model.hailing_project.production_hailing_staging_customer"
+[0m03:34:57.131574 [debug] [Thread-3 (]: On model.hailing_project.production_hailing_staging_customer: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.production_hailing_staging_customer"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_customer` as DBT_INTERNAL_DEST
+        using (
+
+WITH source AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_source`.`production_hailing_source_customer`
+),
+
+cleaned AS (
+    SELECT
+        cust_id,
+        name,
+        -- Standardizing phone numbers (removing parentheses, dashes, spaces)
+        REGEXP_REPLACE(phone_number, r'[\s\-\(\)]', '') AS phone_number,
+        email,
+        created_at
+    FROM source
+)
+
+SELECT * FROM cleaned
+
+    WHERE created_at > (
+        SELECT MAX(created_at)
+        FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_customer`
+    )
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.cust_id = DBT_INTERNAL_DEST.cust_id
+            )
+
+    
+    when matched then update set
+        `cust_id` = DBT_INTERNAL_SOURCE.`cust_id`,`name` = DBT_INTERNAL_SOURCE.`name`,`phone_number` = DBT_INTERNAL_SOURCE.`phone_number`,`email` = DBT_INTERNAL_SOURCE.`email`,`created_at` = DBT_INTERNAL_SOURCE.`created_at`
+    
+
+    when not matched then insert
+        (`cust_id`, `name`, `phone_number`, `email`, `created_at`)
+    values
+        (`cust_id`, `name`, `phone_number`, `email`, `created_at`)
+
+
+    
+[0m03:34:57.132247 [debug] [Thread-1 (]: On model.hailing_project.dim_customer: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.dim_customer"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `purwadika`.`rizky_dwh_hailing_facts`.`dim_customer` as DBT_INTERNAL_DEST
+        using (
+
+WITH source AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_customer`
+),
+
+cleaned AS (
+    SELECT
+        cust_id,
+        name,
+        -- Standardizing phone numbers (removing parentheses, dashes, spaces)
+        REGEXP_REPLACE(phone_number, r'[\s\-\(\)]', '') AS phone_number,
+        email,
+        created_at
+    FROM source
+)
+
+SELECT * FROM cleaned
+
+    WHERE created_at > (
+        SELECT MAX(created_at)
+        FROM `purwadika`.`rizky_dwh_hailing_facts`.`dim_customer`
+    )
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.cust_id = DBT_INTERNAL_DEST.cust_id
+            )
+
+    
+    when matched then update set
+        `cust_id` = DBT_INTERNAL_SOURCE.`cust_id`,`name` = DBT_INTERNAL_SOURCE.`name`,`phone_number` = DBT_INTERNAL_SOURCE.`phone_number`,`email` = DBT_INTERNAL_SOURCE.`email`,`created_at` = DBT_INTERNAL_SOURCE.`created_at`
+    
+
+    when not matched then insert
+        (`cust_id`, `name`, `phone_number`, `email`, `created_at`)
+    values
+        (`cust_id`, `name`, `phone_number`, `email`, `created_at`)
+
+
+    
+[0m03:34:57.132734 [debug] [Thread-4 (]: On model.hailing_project.production_hailing_staging_driver: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.production_hailing_staging_driver"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_driver` as DBT_INTERNAL_DEST
+        using (
+
+WITH source AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_source`.`production_hailing_source_driver`
+),
+
+cleaned AS (
+    SELECT
+        driver_id,
+        name,
+        email,
+        -- Standardizing phone numbers
+        REGEXP_REPLACE(phone_number, r'[\s\-\(\)]', '') AS phone_number,
+        created_at
+    FROM source
+)
+
+SELECT * FROM cleaned
+
+    WHERE created_at > (
+        SELECT MAX(created_at)
+        FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_driver`
+    )
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.driver_id = DBT_INTERNAL_DEST.driver_id
+            )
+
+    
+    when matched then update set
+        `driver_id` = DBT_INTERNAL_SOURCE.`driver_id`,`name` = DBT_INTERNAL_SOURCE.`name`,`email` = DBT_INTERNAL_SOURCE.`email`,`phone_number` = DBT_INTERNAL_SOURCE.`phone_number`,`created_at` = DBT_INTERNAL_SOURCE.`created_at`
+    
+
+    when not matched then insert
+        (`driver_id`, `name`, `email`, `phone_number`, `created_at`)
+    values
+        (`driver_id`, `name`, `email`, `phone_number`, `created_at`)
+
+
+    
+[0m03:34:57.408105 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:US:38a329f1-37f4-4d61-ade7-5de53258df41&page=queryresults
+[0m03:34:57.409189 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:US:38a329f1-37f4-4d61-ade7-5de53258df41&page=queryresults
+[0m03:34:57.413959 [debug] [Thread-2 (]: Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Syntax error: Unexpected ")" at [31:5]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql
+[0m03:34:57.415745 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb93357c990>]}
+[0m03:34:57.416782 [error] [Thread-2 (]: 2 of 6 ERROR creating sql incremental model rizky_dwh_hailing_facts.dim_driver . [[31mERROR[0m in 0.77s]
+[0m03:34:57.418185 [debug] [Thread-2 (]: Finished running node model.hailing_project.dim_driver
+[0m03:34:57.419306 [debug] [Thread-2 (]: Began running node model.hailing_project.production_hailing_staging_ride
+[0m03:34:57.419923 [debug] [Thread-7 (]: Marking all children of 'model.hailing_project.dim_driver' to be skipped because of status 'error'.  Reason: Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Syntax error: Unexpected ")" at [31:5]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql.
+[0m03:34:57.420705 [info ] [Thread-2 (]: 5 of 6 START sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_ride  [RUN]
+[0m03:34:57.422764 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.hailing_project.dim_driver, now model.hailing_project.production_hailing_staging_ride)
+[0m03:34:57.423515 [debug] [Thread-2 (]: Began compiling node model.hailing_project.production_hailing_staging_ride
+[0m03:34:57.428145 [debug] [Thread-2 (]: Writing injected SQL for node "model.hailing_project.production_hailing_staging_ride"
+[0m03:34:57.435009 [debug] [Thread-2 (]: Began executing node model.hailing_project.production_hailing_staging_ride
+[0m03:34:57.439021 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m03:34:57.467952 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:9ecb6c41-e63e-4c5e-8d58-ab807ccbd019&page=queryresults
+[0m03:34:57.468880 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:f3986c98-c3b8-4b38-a89d-1e568b7f2fb2&page=queryresults
+[0m03:34:57.720449 [debug] [Thread-2 (]: Writing runtime sql for node "model.hailing_project.production_hailing_staging_ride"
+[0m03:34:57.728070 [debug] [Thread-2 (]: On model.hailing_project.production_hailing_staging_ride: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.production_hailing_staging_ride"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_ride` as DBT_INTERNAL_DEST
+        using (
+
+WITH source AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_source`.`production_hailing_source_ride`
+)
+
+SELECT *
+FROM source
+
+    WHERE created_at > (
+        SELECT MAX(created_at)
+        FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_ride`
+    )
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.ride_id = DBT_INTERNAL_DEST.ride_id
+            )
+
+    
+    when matched then update set
+        `ride_id` = DBT_INTERNAL_SOURCE.`ride_id`,`cust_id` = DBT_INTERNAL_SOURCE.`cust_id`,`driver_id` = DBT_INTERNAL_SOURCE.`driver_id`,`start_time` = DBT_INTERNAL_SOURCE.`start_time`,`end_time` = DBT_INTERNAL_SOURCE.`end_time`,`distance_km` = DBT_INTERNAL_SOURCE.`distance_km`,`fare` = DBT_INTERNAL_SOURCE.`fare`,`ride_status` = DBT_INTERNAL_SOURCE.`ride_status`,`created_at` = DBT_INTERNAL_SOURCE.`created_at`
+    
+
+    when not matched then insert
+        (`ride_id`, `cust_id`, `driver_id`, `start_time`, `end_time`, `distance_km`, `fare`, `ride_status`, `created_at`)
+    values
+        (`ride_id`, `cust_id`, `driver_id`, `start_time`, `end_time`, `distance_km`, `fare`, `ride_status`, `created_at`)
+
+
+    
+[0m03:34:58.032081 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:9731574c-8980-4b46-a45c-38aa42e5a80b&page=queryresults
+[0m03:34:58.588068 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:514298be-1db1-40b7-a55f-5ac62489dc5a&page=queryresults
+[0m03:34:59.149333 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb9335702d0>]}
+[0m03:34:59.151479 [info ] [Thread-1 (]: 1 of 6 OK created sql incremental model rizky_dwh_hailing_facts.dim_customer ... [[32mMERGE (0.0 rows, 11.3 KiB processed)[0m in 2.51s]
+[0m03:34:59.153458 [debug] [Thread-1 (]: Finished running node model.hailing_project.dim_customer
+[0m03:34:59.154795 [debug] [Thread-1 (]: Began running node model.hailing_project.production_hailing_staging_vehicle
+[0m03:34:59.156266 [info ] [Thread-1 (]: 6 of 6 START sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_vehicle  [RUN]
+[0m03:34:59.159979 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.hailing_project.dim_customer, now model.hailing_project.production_hailing_staging_vehicle)
+[0m03:34:59.160995 [debug] [Thread-1 (]: Began compiling node model.hailing_project.production_hailing_staging_vehicle
+[0m03:34:59.166585 [debug] [Thread-1 (]: Writing injected SQL for node "model.hailing_project.production_hailing_staging_vehicle"
+[0m03:34:59.174410 [debug] [Thread-1 (]: Began executing node model.hailing_project.production_hailing_staging_vehicle
+[0m03:34:59.178452 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:34:59.324574 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb93036d0d0>]}
+[0m03:34:59.325859 [info ] [Thread-4 (]: 4 of 6 OK created sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_driver  [[32mMERGE (0.0 rows, 11.5 KiB processed)[0m in 2.68s]
+[0m03:34:59.327569 [debug] [Thread-4 (]: Finished running node model.hailing_project.production_hailing_staging_driver
+[0m03:34:59.439441 [debug] [Thread-1 (]: Writing runtime sql for node "model.hailing_project.production_hailing_staging_vehicle"
+[0m03:34:59.448149 [debug] [Thread-1 (]: On model.hailing_project.production_hailing_staging_vehicle: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.production_hailing_staging_vehicle"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_vehicle` as DBT_INTERNAL_DEST
+        using (
+
+WITH source AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_source`.`production_hailing_source_vehicle`
+)
+
+SELECT *
+FROM source
+
+    WHERE created_at > (
+        SELECT MAX(created_at)
+        FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_vehicle`
+    )
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.vehicle_id = DBT_INTERNAL_DEST.vehicle_id
+            )
+
+    
+    when matched then update set
+        `vehicle_id` = DBT_INTERNAL_SOURCE.`vehicle_id`,`driver_id` = DBT_INTERNAL_SOURCE.`driver_id`,`vehicle_type` = DBT_INTERNAL_SOURCE.`vehicle_type`,`license_plate` = DBT_INTERNAL_SOURCE.`license_plate`,`year` = DBT_INTERNAL_SOURCE.`year`,`brand` = DBT_INTERNAL_SOURCE.`brand`,`created_at` = DBT_INTERNAL_SOURCE.`created_at`
+    
+
+    when not matched then insert
+        (`vehicle_id`, `driver_id`, `vehicle_type`, `license_plate`, `year`, `brand`, `created_at`)
+    values
+        (`vehicle_id`, `driver_id`, `vehicle_type`, `license_plate`, `year`, `brand`, `created_at`)
+
+
+    
+[0m03:34:59.754490 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:128c49c1-80bd-4d4d-8626-784ad0ea5a49&page=queryresults
+[0m03:34:59.916036 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb92b596d10>]}
+[0m03:34:59.918347 [info ] [Thread-2 (]: 5 of 6 OK created sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_ride  [[32mMERGE (0.0 rows, 15.1 KiB processed)[0m in 2.49s]
+[0m03:34:59.921416 [debug] [Thread-2 (]: Finished running node model.hailing_project.production_hailing_staging_ride
+[0m03:35:00.134135 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb93047d750>]}
+[0m03:35:00.136071 [info ] [Thread-3 (]: 3 of 6 OK created sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_customer  [[32mMERGE (0.0 rows, 11.5 KiB processed)[0m in 3.49s]
+[0m03:35:00.137788 [debug] [Thread-3 (]: Finished running node model.hailing_project.production_hailing_staging_customer
+[0m03:35:01.322382 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88ff593e-8a87-45e0-8114-ff6dcb7cf5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb92b59abd0>]}
+[0m03:35:01.323760 [info ] [Thread-1 (]: 6 of 6 OK created sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_vehicle  [[32mMERGE (0.0 rows, 9.3 KiB processed)[0m in 2.16s]
+[0m03:35:01.325235 [debug] [Thread-1 (]: Finished running node model.hailing_project.production_hailing_staging_vehicle
+[0m03:35:01.328197 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:35:01.332418 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:35:01.333571 [debug] [MainThread]: Connection 'model.hailing_project.production_hailing_staging_ride' was properly closed.
+[0m03:35:01.334713 [debug] [MainThread]: Connection 'model.hailing_project.production_hailing_staging_vehicle' was properly closed.
+[0m03:35:01.335713 [debug] [MainThread]: Connection 'model.hailing_project.production_hailing_staging_customer' was properly closed.
+[0m03:35:01.336736 [debug] [MainThread]: Connection 'model.hailing_project.production_hailing_staging_driver' was properly closed.
+[0m03:35:01.338317 [info ] [MainThread]: 
+[0m03:35:01.339621 [info ] [MainThread]: Finished running 6 incremental models in 0 hours 0 minutes and 5.97 seconds (5.97s).
+[0m03:35:01.341851 [debug] [MainThread]: Command end result
+[0m03:35:01.377666 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt_project/target/manifest.json
+[0m03:35:01.381552 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt_project/target/semantic_manifest.json
+[0m03:35:01.390273 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/dbt_project/target/run_results.json
+[0m03:35:01.391694 [info ] [MainThread]: 
+[0m03:35:01.392982 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:35:01.394087 [info ] [MainThread]: 
+[0m03:35:01.395235 [error] [MainThread]:   Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Syntax error: Unexpected ")" at [31:5]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql
+[0m03:35:01.396137 [info ] [MainThread]: 
+[0m03:35:01.397533 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=0 TOTAL=6
+[0m03:35:01.400109 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 7.3017387, "process_in_blocks": "200", "process_kernel_time": 0.231657, "process_mem_max_rss": "229440", "process_out_blocks": "0", "process_user_time": 3.575587}
+[0m03:35:01.401402 [debug] [MainThread]: Command `dbt run` failed at 03:35:01.401245 after 7.30 seconds
+[0m03:35:01.402607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb973388350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb972f49210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb972f4b5d0>]}
+[0m03:35:01.403974 [debug] [MainThread]: Flushing usage events
+[0m03:35:02.705627 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:52:24.009387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa80d412a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa80d413490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa80d412a50>]}
+
+
+============================== 03:52:24.011977 | 153982ef-b29e-485c-a6a1-a4323e74a1cf ==============================
+[0m03:52:24.011977 [info ] [MainThread]: Running with dbt=1.9.0
+[0m03:52:24.014208 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/usr/app/dbt_project/logs', 'profiles_dir': '/usr/app/dbt_project', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m03:52:24.562759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7df7b1ed0>]}
+[0m03:52:24.605908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa80f6c4850>]}
+[0m03:52:24.607225 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m03:52:24.672475 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m03:52:24.832758 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:52:24.833897 [debug] [MainThread]: Partial parsing: updated file: hailing_project://models/facts/dim_driver.sql
+[0m03:52:25.078914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa80d41a910>]}
+[0m03:52:25.153169 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt_project/target/manifest.json
+[0m03:52:25.158872 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt_project/target/semantic_manifest.json
+[0m03:52:25.173723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7df125390>]}
+[0m03:52:25.175229 [info ] [MainThread]: Found 6 models, 8 sources, 489 macros
+[0m03:52:25.177212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7df405090>]}
+[0m03:52:25.180294 [info ] [MainThread]: 
+[0m03:52:25.181414 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m03:52:25.182698 [info ] [MainThread]: 
+[0m03:52:25.183934 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m03:52:25.188506 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_purwadika'
+[0m03:52:25.189205 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_purwadika'
+[0m03:52:25.189950 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:52:25.190874 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:52:26.746071 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_purwadika, now list_purwadika_rizky_dwh_hailing_facts)
+[0m03:52:26.746756 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_purwadika, now list_purwadika_rizky_dwh_hailing_staging)
+[0m03:52:26.747428 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:52:26.752045 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:52:27.051138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7df595350>]}
+[0m03:52:27.054147 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:52:27.060543 [debug] [Thread-1 (]: Began running node model.hailing_project.dim_customer
+[0m03:52:27.060915 [debug] [Thread-2 (]: Began running node model.hailing_project.dim_driver
+[0m03:52:27.061338 [debug] [Thread-3 (]: Began running node model.hailing_project.production_hailing_staging_customer
+[0m03:52:27.061957 [debug] [Thread-4 (]: Began running node model.hailing_project.production_hailing_staging_driver
+[0m03:52:27.062658 [info ] [Thread-1 (]: 1 of 6 START sql incremental model rizky_dwh_hailing_facts.dim_customer ........ [RUN]
+[0m03:52:27.064034 [info ] [Thread-2 (]: 2 of 6 START sql incremental model rizky_dwh_hailing_facts.dim_driver .......... [RUN]
+[0m03:52:27.065599 [info ] [Thread-3 (]: 3 of 6 START sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_customer  [RUN]
+[0m03:52:27.066669 [info ] [Thread-4 (]: 4 of 6 START sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_driver  [RUN]
+[0m03:52:27.068186 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_purwadika_rizky_dwh_hailing_facts, now model.hailing_project.dim_customer)
+[0m03:52:27.069433 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_purwadika_rizky_dwh_hailing_staging, now model.hailing_project.dim_driver)
+[0m03:52:27.070585 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.hailing_project.production_hailing_staging_customer'
+[0m03:52:27.072583 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.hailing_project.production_hailing_staging_driver'
+[0m03:52:27.074613 [debug] [Thread-1 (]: Began compiling node model.hailing_project.dim_customer
+[0m03:52:27.076641 [debug] [Thread-2 (]: Began compiling node model.hailing_project.dim_driver
+[0m03:52:27.078002 [debug] [Thread-3 (]: Began compiling node model.hailing_project.production_hailing_staging_customer
+[0m03:52:27.079500 [debug] [Thread-4 (]: Began compiling node model.hailing_project.production_hailing_staging_driver
+[0m03:52:27.090381 [debug] [Thread-1 (]: Writing injected SQL for node "model.hailing_project.dim_customer"
+[0m03:52:27.096665 [debug] [Thread-2 (]: Writing injected SQL for node "model.hailing_project.dim_driver"
+[0m03:52:27.101616 [debug] [Thread-3 (]: Writing injected SQL for node "model.hailing_project.production_hailing_staging_customer"
+[0m03:52:27.107119 [debug] [Thread-4 (]: Writing injected SQL for node "model.hailing_project.production_hailing_staging_driver"
+[0m03:52:27.114054 [debug] [Thread-3 (]: Began executing node model.hailing_project.production_hailing_staging_customer
+[0m03:52:27.114687 [debug] [Thread-1 (]: Began executing node model.hailing_project.dim_customer
+[0m03:52:27.115369 [debug] [Thread-4 (]: Began executing node model.hailing_project.production_hailing_staging_driver
+[0m03:52:27.116082 [debug] [Thread-2 (]: Began executing node model.hailing_project.dim_driver
+[0m03:52:27.168701 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:52:27.170366 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m03:52:27.172906 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m03:52:27.202606 [debug] [Thread-2 (]: Writing runtime sql for node "model.hailing_project.dim_driver"
+[0m03:52:27.277867 [debug] [Thread-2 (]: On model.hailing_project.dim_driver: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.dim_driver"} */
+
+  
+    
+
+    create or replace table `purwadika`.`rizky_dwh_hailing_facts`.`dim_driver`
+      
+    partition by timestamp_trunc(created_at, day)
+    
+
+    OPTIONS()
+    as (
+      
+
+
+WITH driver AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_driver`
+
+),
+
+vehicle AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_vehicle`
+)
+
+SELECT
+    driver.id,
+    driver.name as driver_name,
+    driver.phone_number as phone_number,
+    driver.email as email
+    vehicle.vehicle_type,
+    vehicle.license_plate,
+    vehicle.year as vehicle_production_year,
+    vehicle.brand as vehicle_brand,
+    driver.created_at
+FROM driver
+LEFT JOIN vehicle
+on driver.driver_id = vehicle.vehicle_id
+
+SELECT * FROM cleaned
+
+    );
+  
+[0m03:52:27.278927 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m03:52:27.513666 [debug] [Thread-1 (]: Writing runtime sql for node "model.hailing_project.dim_customer"
+[0m03:52:27.514962 [debug] [Thread-3 (]: Writing runtime sql for node "model.hailing_project.production_hailing_staging_customer"
+[0m03:52:27.516043 [debug] [Thread-4 (]: Writing runtime sql for node "model.hailing_project.production_hailing_staging_driver"
+[0m03:52:27.520693 [debug] [Thread-4 (]: On model.hailing_project.production_hailing_staging_driver: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.production_hailing_staging_driver"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_driver` as DBT_INTERNAL_DEST
+        using (
+
+WITH source AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_source`.`production_hailing_source_driver`
+),
+
+cleaned AS (
+    SELECT
+        driver_id,
+        name,
+        email,
+        -- Standardizing phone numbers
+        REGEXP_REPLACE(phone_number, r'[\s\-\(\)]', '') AS phone_number,
+        created_at
+    FROM source
+)
+
+SELECT * FROM cleaned
+
+    WHERE created_at > (
+        SELECT MAX(created_at)
+        FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_driver`
+    )
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.driver_id = DBT_INTERNAL_DEST.driver_id
+            )
+
+    
+    when matched then update set
+        `driver_id` = DBT_INTERNAL_SOURCE.`driver_id`,`name` = DBT_INTERNAL_SOURCE.`name`,`email` = DBT_INTERNAL_SOURCE.`email`,`phone_number` = DBT_INTERNAL_SOURCE.`phone_number`,`created_at` = DBT_INTERNAL_SOURCE.`created_at`
+    
+
+    when not matched then insert
+        (`driver_id`, `name`, `email`, `phone_number`, `created_at`)
+    values
+        (`driver_id`, `name`, `email`, `phone_number`, `created_at`)
+
+
+    
+[0m03:52:27.521369 [debug] [Thread-1 (]: On model.hailing_project.dim_customer: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.dim_customer"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `purwadika`.`rizky_dwh_hailing_facts`.`dim_customer` as DBT_INTERNAL_DEST
+        using (
+
+WITH source AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_customer`
+),
+
+cleaned AS (
+    SELECT
+        cust_id,
+        name,
+        -- Standardizing phone numbers (removing parentheses, dashes, spaces)
+        REGEXP_REPLACE(phone_number, r'[\s\-\(\)]', '') AS phone_number,
+        email,
+        created_at
+    FROM source
+)
+
+SELECT * FROM cleaned
+
+    WHERE created_at > (
+        SELECT MAX(created_at)
+        FROM `purwadika`.`rizky_dwh_hailing_facts`.`dim_customer`
+    )
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.cust_id = DBT_INTERNAL_DEST.cust_id
+            )
+
+    
+    when matched then update set
+        `cust_id` = DBT_INTERNAL_SOURCE.`cust_id`,`name` = DBT_INTERNAL_SOURCE.`name`,`phone_number` = DBT_INTERNAL_SOURCE.`phone_number`,`email` = DBT_INTERNAL_SOURCE.`email`,`created_at` = DBT_INTERNAL_SOURCE.`created_at`
+    
+
+    when not matched then insert
+        (`cust_id`, `name`, `phone_number`, `email`, `created_at`)
+    values
+        (`cust_id`, `name`, `phone_number`, `email`, `created_at`)
+
+
+    
+[0m03:52:27.522040 [debug] [Thread-3 (]: On model.hailing_project.production_hailing_staging_customer: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.production_hailing_staging_customer"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_customer` as DBT_INTERNAL_DEST
+        using (
+
+WITH source AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_source`.`production_hailing_source_customer`
+),
+
+cleaned AS (
+    SELECT
+        cust_id,
+        name,
+        -- Standardizing phone numbers (removing parentheses, dashes, spaces)
+        REGEXP_REPLACE(phone_number, r'[\s\-\(\)]', '') AS phone_number,
+        email,
+        created_at
+    FROM source
+)
+
+SELECT * FROM cleaned
+
+    WHERE created_at > (
+        SELECT MAX(created_at)
+        FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_customer`
+    )
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.cust_id = DBT_INTERNAL_DEST.cust_id
+            )
+
+    
+    when matched then update set
+        `cust_id` = DBT_INTERNAL_SOURCE.`cust_id`,`name` = DBT_INTERNAL_SOURCE.`name`,`phone_number` = DBT_INTERNAL_SOURCE.`phone_number`,`email` = DBT_INTERNAL_SOURCE.`email`,`created_at` = DBT_INTERNAL_SOURCE.`created_at`
+    
+
+    when not matched then insert
+        (`cust_id`, `name`, `phone_number`, `email`, `created_at`)
+    values
+        (`cust_id`, `name`, `phone_number`, `email`, `created_at`)
+
+
+    
+[0m03:52:27.783833 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:US:2ae00ba8-be91-4932-853d-7816c74bab3f&page=queryresults
+[0m03:52:27.784858 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:US:2ae00ba8-be91-4932-853d-7816c74bab3f&page=queryresults
+[0m03:52:27.790155 [debug] [Thread-2 (]: Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Syntax error: Expected ")" but got identifier "vehicle" at [32:5]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql
+[0m03:52:27.792153 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7df24b210>]}
+[0m03:52:27.793240 [error] [Thread-2 (]: 2 of 6 ERROR creating sql incremental model rizky_dwh_hailing_facts.dim_driver . [[31mERROR[0m in 0.72s]
+[0m03:52:27.794478 [debug] [Thread-2 (]: Finished running node model.hailing_project.dim_driver
+[0m03:52:27.795655 [debug] [Thread-2 (]: Began running node model.hailing_project.production_hailing_staging_ride
+[0m03:52:27.796222 [debug] [Thread-7 (]: Marking all children of 'model.hailing_project.dim_driver' to be skipped because of status 'error'.  Reason: Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Syntax error: Expected ")" but got identifier "vehicle" at [32:5]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql.
+[0m03:52:27.797413 [info ] [Thread-2 (]: 5 of 6 START sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_ride  [RUN]
+[0m03:52:27.800220 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.hailing_project.dim_driver, now model.hailing_project.production_hailing_staging_ride)
+[0m03:52:27.801476 [debug] [Thread-2 (]: Began compiling node model.hailing_project.production_hailing_staging_ride
+[0m03:52:27.805693 [debug] [Thread-2 (]: Writing injected SQL for node "model.hailing_project.production_hailing_staging_ride"
+[0m03:52:27.811518 [debug] [Thread-2 (]: Began executing node model.hailing_project.production_hailing_staging_ride
+[0m03:52:27.815649 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m03:52:27.847386 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:d242e63c-74f6-4fe3-af28-af964e8dcde6&page=queryresults
+[0m03:52:27.848761 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:4d45b910-058a-48a9-a624-feaa71953969&page=queryresults
+[0m03:52:27.854140 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:5acdda52-85ad-4c31-ba99-1a58b59c576d&page=queryresults
+[0m03:52:28.057302 [debug] [Thread-2 (]: Writing runtime sql for node "model.hailing_project.production_hailing_staging_ride"
+[0m03:52:28.063732 [debug] [Thread-2 (]: On model.hailing_project.production_hailing_staging_ride: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.production_hailing_staging_ride"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_ride` as DBT_INTERNAL_DEST
+        using (
+
+WITH source AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_source`.`production_hailing_source_ride`
+)
+
+SELECT *
+FROM source
+
+    WHERE created_at > (
+        SELECT MAX(created_at)
+        FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_ride`
+    )
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.ride_id = DBT_INTERNAL_DEST.ride_id
+            )
+
+    
+    when matched then update set
+        `ride_id` = DBT_INTERNAL_SOURCE.`ride_id`,`cust_id` = DBT_INTERNAL_SOURCE.`cust_id`,`driver_id` = DBT_INTERNAL_SOURCE.`driver_id`,`start_time` = DBT_INTERNAL_SOURCE.`start_time`,`end_time` = DBT_INTERNAL_SOURCE.`end_time`,`distance_km` = DBT_INTERNAL_SOURCE.`distance_km`,`fare` = DBT_INTERNAL_SOURCE.`fare`,`ride_status` = DBT_INTERNAL_SOURCE.`ride_status`,`created_at` = DBT_INTERNAL_SOURCE.`created_at`
+    
+
+    when not matched then insert
+        (`ride_id`, `cust_id`, `driver_id`, `start_time`, `end_time`, `distance_km`, `fare`, `ride_status`, `created_at`)
+    values
+        (`ride_id`, `cust_id`, `driver_id`, `start_time`, `end_time`, `distance_km`, `fare`, `ride_status`, `created_at`)
+
+
+    
+[0m03:52:28.327893 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:6f86c974-367e-4205-9ea8-f53bb05a4550&page=queryresults
+[0m03:52:29.456623 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7df164490>]}
+[0m03:52:29.458336 [info ] [Thread-3 (]: 3 of 6 OK created sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_customer  [[32mMERGE (0.0 rows, 11.5 KiB processed)[0m in 2.39s]
+[0m03:52:29.460495 [debug] [Thread-3 (]: Finished running node model.hailing_project.production_hailing_staging_customer
+[0m03:52:29.461637 [debug] [Thread-3 (]: Began running node model.hailing_project.production_hailing_staging_vehicle
+[0m03:52:29.462898 [info ] [Thread-3 (]: 6 of 6 START sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_vehicle  [RUN]
+[0m03:52:29.464630 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.hailing_project.production_hailing_staging_customer, now model.hailing_project.production_hailing_staging_vehicle)
+[0m03:52:29.465826 [debug] [Thread-3 (]: Began compiling node model.hailing_project.production_hailing_staging_vehicle
+[0m03:52:29.470629 [debug] [Thread-3 (]: Writing injected SQL for node "model.hailing_project.production_hailing_staging_vehicle"
+[0m03:52:29.473674 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7df193110>]}
+[0m03:52:29.475227 [info ] [Thread-4 (]: 4 of 6 OK created sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_driver  [[32mMERGE (0.0 rows, 11.5 KiB processed)[0m in 2.40s]
+[0m03:52:29.477281 [debug] [Thread-4 (]: Finished running node model.hailing_project.production_hailing_staging_driver
+[0m03:52:29.483413 [debug] [Thread-3 (]: Began executing node model.hailing_project.production_hailing_staging_vehicle
+[0m03:52:29.486387 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m03:52:29.522430 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7df717ad0>]}
+[0m03:52:29.523511 [info ] [Thread-1 (]: 1 of 6 OK created sql incremental model rizky_dwh_hailing_facts.dim_customer ... [[32mMERGE (0.0 rows, 11.3 KiB processed)[0m in 2.45s]
+[0m03:52:29.524609 [debug] [Thread-1 (]: Finished running node model.hailing_project.dim_customer
+[0m03:52:29.851836 [debug] [Thread-3 (]: Writing runtime sql for node "model.hailing_project.production_hailing_staging_vehicle"
+[0m03:52:29.859497 [debug] [Thread-3 (]: On model.hailing_project.production_hailing_staging_vehicle: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.production_hailing_staging_vehicle"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_vehicle` as DBT_INTERNAL_DEST
+        using (
+
+WITH source AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_source`.`production_hailing_source_vehicle`
+)
+
+SELECT *
+FROM source
+
+    WHERE created_at > (
+        SELECT MAX(created_at)
+        FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_vehicle`
+    )
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.vehicle_id = DBT_INTERNAL_DEST.vehicle_id
+            )
+
+    
+    when matched then update set
+        `vehicle_id` = DBT_INTERNAL_SOURCE.`vehicle_id`,`driver_id` = DBT_INTERNAL_SOURCE.`driver_id`,`vehicle_type` = DBT_INTERNAL_SOURCE.`vehicle_type`,`license_plate` = DBT_INTERNAL_SOURCE.`license_plate`,`year` = DBT_INTERNAL_SOURCE.`year`,`brand` = DBT_INTERNAL_SOURCE.`brand`,`created_at` = DBT_INTERNAL_SOURCE.`created_at`
+    
+
+    when not matched then insert
+        (`vehicle_id`, `driver_id`, `vehicle_type`, `license_plate`, `year`, `brand`, `created_at`)
+    values
+        (`vehicle_id`, `driver_id`, `vehicle_type`, `license_plate`, `year`, `brand`, `created_at`)
+
+
+    
+[0m03:52:29.872787 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7c732ca50>]}
+[0m03:52:29.874722 [info ] [Thread-2 (]: 5 of 6 OK created sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_ride  [[32mMERGE (0.0 rows, 15.1 KiB processed)[0m in 2.07s]
+[0m03:52:29.876314 [debug] [Thread-2 (]: Finished running node model.hailing_project.production_hailing_staging_ride
+[0m03:52:30.153534 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:185c6217-28d4-4ab3-aa5c-163148948018&page=queryresults
+[0m03:52:31.699232 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '153982ef-b29e-485c-a6a1-a4323e74a1cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7df1cac10>]}
+[0m03:52:31.700697 [info ] [Thread-3 (]: 6 of 6 OK created sql incremental model rizky_dwh_hailing_staging.production_hailing_staging_vehicle  [[32mMERGE (0.0 rows, 9.3 KiB processed)[0m in 2.23s]
+[0m03:52:31.702715 [debug] [Thread-3 (]: Finished running node model.hailing_project.production_hailing_staging_vehicle
+[0m03:52:31.704941 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:52:31.707325 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:52:31.708122 [debug] [MainThread]: Connection 'model.hailing_project.dim_customer' was properly closed.
+[0m03:52:31.708858 [debug] [MainThread]: Connection 'model.hailing_project.production_hailing_staging_ride' was properly closed.
+[0m03:52:31.709577 [debug] [MainThread]: Connection 'model.hailing_project.production_hailing_staging_vehicle' was properly closed.
+[0m03:52:31.710266 [debug] [MainThread]: Connection 'model.hailing_project.production_hailing_staging_driver' was properly closed.
+[0m03:52:31.711049 [info ] [MainThread]: 
+[0m03:52:31.712258 [info ] [MainThread]: Finished running 6 incremental models in 0 hours 0 minutes and 6.53 seconds (6.53s).
+[0m03:52:31.714442 [debug] [MainThread]: Command end result
+[0m03:52:31.748795 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt_project/target/manifest.json
+[0m03:52:31.753072 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt_project/target/semantic_manifest.json
+[0m03:52:31.762001 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/dbt_project/target/run_results.json
+[0m03:52:31.762972 [info ] [MainThread]: 
+[0m03:52:31.764267 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:52:31.765666 [info ] [MainThread]: 
+[0m03:52:31.767051 [error] [MainThread]:   Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Syntax error: Expected ")" but got identifier "vehicle" at [32:5]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql
+[0m03:52:31.768040 [info ] [MainThread]: 
+[0m03:52:31.769018 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=0 TOTAL=6
+[0m03:52:31.770908 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 7.808884, "process_in_blocks": "0", "process_kernel_time": 0.183053, "process_mem_max_rss": "227456", "process_out_blocks": "0", "process_user_time": 3.569547}
+[0m03:52:31.772019 [debug] [MainThread]: Command `dbt run` failed at 03:52:31.771874 after 7.81 seconds
+[0m03:52:31.773071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa80d48f850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa80e11b410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa80d470a50>]}
+[0m03:52:31.774612 [debug] [MainThread]: Flushing usage events
+[0m03:52:33.388748 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:54:07.259821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62c65eba10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62c66339d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62c7a90390>]}
+
+
+============================== 03:54:07.262318 | 907bc332-d776-4c5c-94f6-8f79fc20f430 ==============================
+[0m03:54:07.262318 [info ] [MainThread]: Running with dbt=1.9.0
+[0m03:54:07.264657 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/usr/app/dbt_project/logs', 'profiles_dir': '/usr/app/dbt_project', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --select dim_driver', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m03:54:07.823247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '907bc332-d776-4c5c-94f6-8f79fc20f430', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f629cf7de50>]}
+[0m03:54:07.872691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '907bc332-d776-4c5c-94f6-8f79fc20f430', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62c8872050>]}
+[0m03:54:07.874037 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m03:54:07.945154 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m03:54:08.103641 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:54:08.105009 [debug] [MainThread]: Partial parsing: updated file: hailing_project://models/facts/dim_driver.sql
+[0m03:54:08.352391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '907bc332-d776-4c5c-94f6-8f79fc20f430', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f629c988310>]}
+[0m03:54:08.424504 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt_project/target/manifest.json
+[0m03:54:08.431950 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt_project/target/semantic_manifest.json
+[0m03:54:08.446498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '907bc332-d776-4c5c-94f6-8f79fc20f430', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f629c2eddd0>]}
+[0m03:54:08.447591 [info ] [MainThread]: Found 6 models, 8 sources, 489 macros
+[0m03:54:08.448916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '907bc332-d776-4c5c-94f6-8f79fc20f430', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f629c2a6050>]}
+[0m03:54:08.451236 [info ] [MainThread]: 
+[0m03:54:08.452308 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m03:54:08.453178 [info ] [MainThread]: 
+[0m03:54:08.454363 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m03:54:08.456087 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_purwadika'
+[0m03:54:08.456992 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:54:08.962655 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_purwadika, now list_purwadika_rizky_dwh_hailing_staging)
+[0m03:54:08.963328 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_purwadika_rizky_dwh_hailing_facts'
+[0m03:54:08.964223 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:54:08.965400 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:54:09.232281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '907bc332-d776-4c5c-94f6-8f79fc20f430', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f629c762b50>]}
+[0m03:54:09.233782 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:54:09.238271 [debug] [Thread-1 (]: Began running node model.hailing_project.dim_driver
+[0m03:54:09.239672 [info ] [Thread-1 (]: 1 of 1 START sql incremental model rizky_dwh_hailing_facts.dim_driver .......... [RUN]
+[0m03:54:09.241442 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_purwadika_rizky_dwh_hailing_staging, now model.hailing_project.dim_driver)
+[0m03:54:09.242597 [debug] [Thread-1 (]: Began compiling node model.hailing_project.dim_driver
+[0m03:54:09.250554 [debug] [Thread-1 (]: Writing injected SQL for node "model.hailing_project.dim_driver"
+[0m03:54:09.259693 [debug] [Thread-1 (]: Began executing node model.hailing_project.dim_driver
+[0m03:54:09.325980 [debug] [Thread-1 (]: Writing runtime sql for node "model.hailing_project.dim_driver"
+[0m03:54:09.335059 [debug] [Thread-1 (]: On model.hailing_project.dim_driver: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.dim_driver"} */
+
+  
+    
+
+    create or replace table `purwadika`.`rizky_dwh_hailing_facts`.`dim_driver`
+      
+    partition by timestamp_trunc(created_at, day)
+    
+
+    OPTIONS()
+    as (
+      
+
+
+WITH driver AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_driver`
+
+),
+
+vehicle AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_vehicle`
+)
+
+SELECT
+    driver.id,
+    driver.name as driver_name,
+    driver.phone_number as phone_number,
+    driver.email as email
+    vehicle.vehicle_type,
+    vehicle.license_plate,
+    vehicle.year as vehicle_production_year,
+    vehicle.brand as vehicle_brand,
+    driver.created_at
+FROM driver
+LEFT JOIN vehicle
+on driver.driver_id = vehicle.vehicle_id
+
+
+    );
+  
+[0m03:54:09.336256 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:54:10.320401 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:US:a6ce2bf3-a20a-4c76-889d-4ef962a5b5b3&page=queryresults
+[0m03:54:10.321910 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:US:a6ce2bf3-a20a-4c76-889d-4ef962a5b5b3&page=queryresults
+[0m03:54:10.328443 [debug] [Thread-1 (]: Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Syntax error: Expected ")" but got identifier "vehicle" at [32:5]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql
+[0m03:54:10.331095 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '907bc332-d776-4c5c-94f6-8f79fc20f430', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f629c35f1d0>]}
+[0m03:54:10.332889 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model rizky_dwh_hailing_facts.dim_driver . [[31mERROR[0m in 1.09s]
+[0m03:54:10.334846 [debug] [Thread-1 (]: Finished running node model.hailing_project.dim_driver
+[0m03:54:10.336238 [debug] [Thread-7 (]: Marking all children of 'model.hailing_project.dim_driver' to be skipped because of status 'error'.  Reason: Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Syntax error: Expected ")" but got identifier "vehicle" at [32:5]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql.
+[0m03:54:10.339833 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:54:10.344167 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:54:10.345526 [debug] [MainThread]: Connection 'model.hailing_project.dim_driver' was properly closed.
+[0m03:54:10.346457 [debug] [MainThread]: Connection 'list_purwadika_rizky_dwh_hailing_facts' was properly closed.
+[0m03:54:10.347356 [info ] [MainThread]: 
+[0m03:54:10.348458 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 1.89 seconds (1.89s).
+[0m03:54:10.350111 [debug] [MainThread]: Command end result
+[0m03:54:10.389126 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt_project/target/manifest.json
+[0m03:54:10.392799 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt_project/target/semantic_manifest.json
+[0m03:54:10.400151 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/dbt_project/target/run_results.json
+[0m03:54:10.400779 [info ] [MainThread]: 
+[0m03:54:10.401758 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:54:10.402760 [info ] [MainThread]: 
+[0m03:54:10.404120 [error] [MainThread]:   Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Syntax error: Expected ")" but got identifier "vehicle" at [32:5]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql
+[0m03:54:10.405239 [info ] [MainThread]: 
+[0m03:54:10.406583 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m03:54:10.408627 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.193945, "process_in_blocks": "0", "process_kernel_time": 0.256559, "process_mem_max_rss": "220320", "process_out_blocks": "0", "process_user_time": 3.191598}
+[0m03:54:10.409977 [debug] [MainThread]: Command `dbt run` failed at 03:54:10.409777 after 3.20 seconds
+[0m03:54:10.410876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62c6643d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62ca0dd910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62c9f692d0>]}
+[0m03:54:10.411729 [debug] [MainThread]: Flushing usage events
+[0m03:54:11.672933 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:54:47.305132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f336901b910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3368fc3190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3368fc2d50>]}
+
+
+============================== 03:54:47.307891 | 01a47711-d4a1-4af5-9bb6-d1a40e76aa48 ==============================
+[0m03:54:47.307891 [info ] [MainThread]: Running with dbt=1.9.0
+[0m03:54:47.310333 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/usr/app/dbt_project/logs', 'profiles_dir': '/usr/app/dbt_project', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --select dim_driver', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m03:54:47.891313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '01a47711-d4a1-4af5-9bb6-d1a40e76aa48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f333b16edd0>]}
+[0m03:54:47.933743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '01a47711-d4a1-4af5-9bb6-d1a40e76aa48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f333b2caf10>]}
+[0m03:54:47.935343 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m03:54:48.000278 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m03:54:48.154713 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:54:48.156535 [debug] [MainThread]: Partial parsing: updated file: hailing_project://models/facts/dim_driver.sql
+[0m03:54:48.405934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '01a47711-d4a1-4af5-9bb6-d1a40e76aa48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f333b17f150>]}
+[0m03:54:48.474712 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt_project/target/manifest.json
+[0m03:54:48.479871 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt_project/target/semantic_manifest.json
+[0m03:54:48.494788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '01a47711-d4a1-4af5-9bb6-d1a40e76aa48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f333acd9510>]}
+[0m03:54:48.496074 [info ] [MainThread]: Found 6 models, 8 sources, 489 macros
+[0m03:54:48.497143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01a47711-d4a1-4af5-9bb6-d1a40e76aa48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f333afc3e50>]}
+[0m03:54:48.499183 [info ] [MainThread]: 
+[0m03:54:48.500188 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m03:54:48.501138 [info ] [MainThread]: 
+[0m03:54:48.502303 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m03:54:48.503760 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_purwadika'
+[0m03:54:48.504522 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:54:49.016799 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_purwadika, now list_purwadika_rizky_dwh_hailing_staging)
+[0m03:54:49.017354 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_purwadika_rizky_dwh_hailing_facts'
+[0m03:54:49.017988 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:54:49.018720 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:54:49.276759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01a47711-d4a1-4af5-9bb6-d1a40e76aa48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f333b14f510>]}
+[0m03:54:49.278398 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:54:49.283031 [debug] [Thread-1 (]: Began running node model.hailing_project.dim_driver
+[0m03:54:49.285179 [info ] [Thread-1 (]: 1 of 1 START sql incremental model rizky_dwh_hailing_facts.dim_driver .......... [RUN]
+[0m03:54:49.287346 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_purwadika_rizky_dwh_hailing_staging, now model.hailing_project.dim_driver)
+[0m03:54:49.288716 [debug] [Thread-1 (]: Began compiling node model.hailing_project.dim_driver
+[0m03:54:49.298247 [debug] [Thread-1 (]: Writing injected SQL for node "model.hailing_project.dim_driver"
+[0m03:54:49.305613 [debug] [Thread-1 (]: Began executing node model.hailing_project.dim_driver
+[0m03:54:49.365969 [debug] [Thread-1 (]: Writing runtime sql for node "model.hailing_project.dim_driver"
+[0m03:54:49.371943 [debug] [Thread-1 (]: On model.hailing_project.dim_driver: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.dim_driver"} */
+
+  
+    
+
+    create or replace table `purwadika`.`rizky_dwh_hailing_facts`.`dim_driver`
+      
+    partition by timestamp_trunc(created_at, day)
+    
+
+    OPTIONS()
+    as (
+      
+
+
+WITH driver AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_driver`
+
+),
+
+vehicle AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_vehicle`
+)
+
+SELECT
+    driver.id,
+    driver.name as driver_name,
+    driver.phone_number as phone_number,
+    driver.email as email,
+    vehicle.vehicle_type,
+    vehicle.license_plate,
+    vehicle.year as vehicle_production_year,
+    vehicle.brand as vehicle_brand,
+    driver.created_at
+FROM driver
+LEFT JOIN vehicle
+on driver.driver_id = vehicle.vehicle_id
+
+
+    );
+  
+[0m03:54:49.372896 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:54:49.880754 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:8f06bbcb-6426-4ec7-8c14-4de0897565c2&page=queryresults
+[0m03:54:49.952669 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:8f06bbcb-6426-4ec7-8c14-4de0897565c2&page=queryresults
+[0m03:54:49.958264 [debug] [Thread-1 (]: Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Name id not found inside driver at [28:12]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql
+[0m03:54:49.960672 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01a47711-d4a1-4af5-9bb6-d1a40e76aa48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f333ad225d0>]}
+[0m03:54:49.961730 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model rizky_dwh_hailing_facts.dim_driver . [[31mERROR[0m in 0.67s]
+[0m03:54:49.963258 [debug] [Thread-1 (]: Finished running node model.hailing_project.dim_driver
+[0m03:54:49.964825 [debug] [Thread-7 (]: Marking all children of 'model.hailing_project.dim_driver' to be skipped because of status 'error'.  Reason: Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Name id not found inside driver at [28:12]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql.
+[0m03:54:49.967667 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:54:49.972155 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:54:49.973097 [debug] [MainThread]: Connection 'model.hailing_project.dim_driver' was properly closed.
+[0m03:54:49.973994 [debug] [MainThread]: Connection 'list_purwadika_rizky_dwh_hailing_facts' was properly closed.
+[0m03:54:49.974822 [info ] [MainThread]: 
+[0m03:54:49.975920 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 1.47 seconds (1.47s).
+[0m03:54:49.977302 [debug] [MainThread]: Command end result
+[0m03:54:50.009816 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt_project/target/manifest.json
+[0m03:54:50.013990 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt_project/target/semantic_manifest.json
+[0m03:54:50.021271 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/dbt_project/target/run_results.json
+[0m03:54:50.021953 [info ] [MainThread]: 
+[0m03:54:50.023028 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:54:50.024254 [info ] [MainThread]: 
+[0m03:54:50.025299 [error] [MainThread]:   Database Error in model dim_driver (models/facts/dim_driver.sql)
+  Name id not found inside driver at [28:12]
+  compiled code at target/run/hailing_project/models/facts/dim_driver.sql
+[0m03:54:50.026188 [info ] [MainThread]: 
+[0m03:54:50.027116 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m03:54:50.028941 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.772105, "process_in_blocks": "0", "process_kernel_time": 0.173367, "process_mem_max_rss": "218932", "process_out_blocks": "0", "process_user_time": 3.273578}
+[0m03:54:50.030442 [debug] [MainThread]: Command `dbt run` failed at 03:54:50.030216 after 2.77 seconds
+[0m03:54:50.031674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f336901e9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f336901f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f333b14dd90>]}
+[0m03:54:50.032669 [debug] [MainThread]: Flushing usage events
+[0m03:54:51.237289 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:56:52.423614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31bfb2fa90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31bfb2dbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31bfb2ec90>]}
+
+
+============================== 03:56:52.426398 | c810cd32-3329-4924-80e5-2f7a50074dc4 ==============================
+[0m03:56:52.426398 [info ] [MainThread]: Running with dbt=1.9.0
+[0m03:56:52.428051 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/usr/app/dbt_project/logs', 'profiles_dir': '/usr/app/dbt_project', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select dim_driver', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m03:56:53.025163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c810cd32-3329-4924-80e5-2f7a50074dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3192424950>]}
+[0m03:56:53.070626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c810cd32-3329-4924-80e5-2f7a50074dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31c1dde590>]}
+[0m03:56:53.071920 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m03:56:53.137994 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m03:56:53.307802 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:56:53.308653 [debug] [MainThread]: Partial parsing: updated file: hailing_project://models/facts/dim_driver.sql
+[0m03:56:53.554722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c810cd32-3329-4924-80e5-2f7a50074dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3191abca50>]}
+[0m03:56:53.617070 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt_project/target/manifest.json
+[0m03:56:53.623485 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt_project/target/semantic_manifest.json
+[0m03:56:53.638962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c810cd32-3329-4924-80e5-2f7a50074dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3191976950>]}
+[0m03:56:53.639993 [info ] [MainThread]: Found 6 models, 8 sources, 489 macros
+[0m03:56:53.641048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c810cd32-3329-4924-80e5-2f7a50074dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3191944550>]}
+[0m03:56:53.643152 [info ] [MainThread]: 
+[0m03:56:53.644218 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m03:56:53.645568 [info ] [MainThread]: 
+[0m03:56:53.646859 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m03:56:53.648508 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_purwadika'
+[0m03:56:53.649348 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:56:54.188564 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_purwadika, now list_purwadika_rizky_dwh_hailing_staging)
+[0m03:56:54.189316 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_purwadika_rizky_dwh_hailing_facts'
+[0m03:56:54.190479 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m03:56:54.191661 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:56:54.418630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c810cd32-3329-4924-80e5-2f7a50074dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3191e19ed0>]}
+[0m03:56:54.420153 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:56:54.426424 [debug] [Thread-1 (]: Began running node model.hailing_project.dim_driver
+[0m03:56:54.427344 [info ] [Thread-1 (]: 1 of 1 START sql incremental model rizky_dwh_hailing_facts.dim_driver .......... [RUN]
+[0m03:56:54.428460 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_purwadika_rizky_dwh_hailing_facts, now model.hailing_project.dim_driver)
+[0m03:56:54.429162 [debug] [Thread-1 (]: Began compiling node model.hailing_project.dim_driver
+[0m03:56:54.437195 [debug] [Thread-1 (]: Writing injected SQL for node "model.hailing_project.dim_driver"
+[0m03:56:54.442353 [debug] [Thread-1 (]: Began executing node model.hailing_project.dim_driver
+[0m03:56:54.506238 [debug] [Thread-1 (]: Writing runtime sql for node "model.hailing_project.dim_driver"
+[0m03:56:54.512046 [debug] [Thread-1 (]: On model.hailing_project.dim_driver: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "hailing_project", "target_name": "dev", "node_id": "model.hailing_project.dim_driver"} */
+
+  
+    
+
+    create or replace table `purwadika`.`rizky_dwh_hailing_facts`.`dim_driver`
+      
+    partition by timestamp_trunc(created_at, day)
+    
+
+    OPTIONS()
+    as (
+      
+
+
+WITH driver AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_driver`
+
+),
+
+vehicle AS (
+    SELECT *
+    FROM `purwadika`.`rizky_dwh_hailing_staging`.`production_hailing_staging_vehicle`
+)
+
+SELECT
+    driver.driver_id,
+    vehicle.vehicle_id,
+    driver.name as driver_name,
+    driver.phone_number as phone_number,
+    driver.email as email,
+    vehicle.vehicle_type,
+    vehicle.brand as vehicle_brand,
+    vehicle.year as vehicle_production_year,
+    vehicle.license_plate,
+    driver.created_at
+FROM driver
+LEFT JOIN vehicle
+on driver.driver_id = vehicle.vehicle_id
+
+
+    );
+  
+[0m03:56:54.512894 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m03:56:54.926032 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=purwadika&j=bq:asia-southeast2:40b8ee3b-5c33-4455-8090-ffadaebed153&page=queryresults
+[0m03:56:56.890643 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c810cd32-3329-4924-80e5-2f7a50074dc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3191aecd50>]}
+[0m03:56:56.891896 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model rizky_dwh_hailing_facts.dim_driver ..... [[32mCREATE TABLE (85.0 rows, 9.0 KiB processed)[0m in 2.46s]
+[0m03:56:56.893333 [debug] [Thread-1 (]: Finished running node model.hailing_project.dim_driver
+[0m03:56:56.895486 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:56:56.898100 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:56:56.898795 [debug] [MainThread]: Connection 'list_purwadika_rizky_dwh_hailing_staging' was properly closed.
+[0m03:56:56.899471 [debug] [MainThread]: Connection 'model.hailing_project.dim_driver' was properly closed.
+[0m03:56:56.900297 [info ] [MainThread]: 
+[0m03:56:56.901146 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 3.25 seconds (3.25s).
+[0m03:56:56.903027 [debug] [MainThread]: Command end result
+[0m03:56:56.938007 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt_project/target/manifest.json
+[0m03:56:56.941876 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt_project/target/semantic_manifest.json
+[0m03:56:56.949545 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/dbt_project/target/run_results.json
+[0m03:56:56.950397 [info ] [MainThread]: 
+[0m03:56:56.952239 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:56:56.953184 [info ] [MainThread]: 
+[0m03:56:56.954082 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m03:56:56.955463 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.581288, "process_in_blocks": "0", "process_kernel_time": 0.241443, "process_mem_max_rss": "222432", "process_out_blocks": "0", "process_user_time": 3.299729}
+[0m03:56:56.956415 [debug] [MainThread]: Command `dbt run` succeeded at 03:56:56.956308 after 4.58 seconds
+[0m03:56:56.957145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31c0048c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31c3659950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31c3446710>]}
+[0m03:56:56.958052 [debug] [MainThread]: Flushing usage events
+[0m03:56:58.264872 [debug] [MainThread]: An error was encountered while trying to flush usage events
