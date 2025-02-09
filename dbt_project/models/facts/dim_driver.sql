@@ -1,0 +1,27 @@
+{{
+    config(
+        materialized='incremental',
+        unique_key='driver_id',
+            partition_by={
+                "field": "created_at",
+                "data_type": "timestamp"
+            }
+    )
+}}
+
+
+WITH source AS (
+    SELECT *
+    FROM {{ source('staging_tables', 'customer_data') }}
+),
+
+cleaned AS (
+    SELECT
+        cust_id,
+        name,
+        -- Standardizing phone numbers (removing parentheses, dashes, spaces)
+        REGEXP_REPLACE(phone_number, r'[\s\-\(\)]', '') AS phone_number,
+        email,
+        created_at
+    FROM source
+)

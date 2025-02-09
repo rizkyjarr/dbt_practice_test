@@ -21,15 +21,23 @@ clean-targets:
 
 models:
 
-  dbt_project: # samain kaya nama folder project nya nya
+  hailing_project: # samain kaya nama dbt_project, bukan folder
 
-    staging: 
-      +dataset: rizky_dwh_hailing_staging
-      +materialized: incremental
+    staging:
+      +materialized: view
+      +schema: rizky_dwh_hailing_staging
+      +persists_docs:
+        relation: true
+        columns: true
+
+
+    facts:
+      +materialized: view
+      +schema: rizky_dwh_hailing_facts
+      +persists_docs:
+        relation: true
+        columns: true
       
-
-    # facts:
-    #   # +schema: rizky_dwh_hailing_facts
-    #   +materialized: incremental
+      
       
 
