@@ -31,4 +31,3 @@ LEFT JOIN fact_rides
 ON dim_driver.driver_id = fact_rides.driver_id
 
 GROUP BY driver_id,driver_name,phone_number,email,vehicle_type
-

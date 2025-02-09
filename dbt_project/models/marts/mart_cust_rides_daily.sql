@@ -1,7 +1,7 @@
 {{
     config(
         materialized='incremental',
-        unique_key='cust_id',
+        unique_key=['cust_id','ride_date'],
             partition_by={
                 "field": "ride_date",
                 "data_type": "date"
@@ -32,5 +32,3 @@ SELECT
 FROM fact_rides
 GROUP BY cust_name, cust_id, ride_date, cust_email, cust_phone_number
     
-
-
