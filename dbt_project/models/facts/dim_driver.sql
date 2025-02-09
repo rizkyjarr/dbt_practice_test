@@ -12,13 +12,13 @@
 
 WITH driver AS (
     SELECT *
-    FROM {{ source('staging_tables', 'driver_data') }}
+    FROM {{ ref('production_hailing_staging_driver') }} --pakai ref untuk buat dependency
 
 ),
 
 vehicle AS (
     SELECT *
-    FROM {{ source('staging_tables', 'vehicle_data')}}
+    FROM {{ ref('production_hailing_staging_vehicle')}}
 )
 
 SELECT
@@ -37,8 +37,8 @@ LEFT JOIN vehicle
 on driver.driver_id = vehicle.vehicle_id
 
 {% if check_if_incremental() %}
-    WHERE created_at > (
-        SELECT MAX(created_at)
+    WHERE driver.created_at > (
+        SELECT MAX(driver.created_at)
         FROM {{ this }}
     )
 {% endif %}

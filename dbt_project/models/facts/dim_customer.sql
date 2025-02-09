@@ -11,21 +11,10 @@
 
 WITH source AS (
     SELECT *
-    FROM {{ source('staging_tables', 'customer_data') }}
-),
-
-cleaned AS (
-    SELECT
-        cust_id,
-        name,
-        -- Standardizing phone numbers (removing parentheses, dashes, spaces)
-        REGEXP_REPLACE(phone_number, r'[\s\-\(\)]', '') AS phone_number,
-        email,
-        created_at
-    FROM source
+    FROM {{ ref('production_hailing_staging_customer') }}
 )
 
-SELECT * FROM cleaned
+SELECT * FROM source
 {% if check_if_incremental() %}
     WHERE created_at > (
         SELECT MAX(created_at)

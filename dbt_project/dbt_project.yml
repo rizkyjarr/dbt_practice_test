@@ -29,6 +29,7 @@ models:
       +persists_docs:
         relation: true
         columns: true
+      tag: group_1
 
 
     facts:
@@ -37,7 +38,15 @@ models:
       +persists_docs:
         relation: true
         columns: true
+      tag: group_2
       
+    marts:
+      +materialized: view
+      +schema: rizky_dwh_hailing_marts
+      +persists_docs:
+        relation: true
+        columns: true
+      tag: group_3
       
       
 
