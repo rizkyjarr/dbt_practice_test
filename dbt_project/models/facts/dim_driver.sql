@@ -24,21 +24,21 @@ vehicle AS (
 SELECT
     driver.driver_id,
     vehicle.vehicle_id,
-    driver.name as driver_name,
-    driver.phone_number as phone_number,
-    driver.email as email,
+    driver.name AS driver_name,
+    driver.phone_number AS phone_number,
+    driver.email AS email,
     vehicle.vehicle_type,
-    vehicle.brand as vehicle_brand,
-    vehicle.year as vehicle_production_year,
+    vehicle.brand AS vehicle_brand,
+    vehicle.year AS vehicle_production_year,
     vehicle.license_plate,
     driver.created_at
 FROM driver
 LEFT JOIN vehicle
-on driver.driver_id = vehicle.vehicle_id
+on driver.driver_id = vehicle.driver_id
 
 {% if check_if_incremental() %}
     WHERE driver.created_at > (
-        SELECT MAX(driver.created_at)
+        SELECT MAX(created_at)
         FROM {{ this }}
     )
 {% endif %}

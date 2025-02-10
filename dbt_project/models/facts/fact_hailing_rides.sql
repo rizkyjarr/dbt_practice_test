@@ -59,7 +59,7 @@ on ride_staging.driver_id = dim_driver.driver_id
 
 {% if check_if_incremental() %}
     WHERE ride_staging.created_at > (
-        SELECT MAX(ride_staging.created_at)
+        SELECT MAX(created_at)
         FROM {{ this }}
     )
 {% endif %}
